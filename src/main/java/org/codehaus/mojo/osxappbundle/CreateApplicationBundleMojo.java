@@ -399,7 +399,7 @@ public class CreateApplicationBundleMojo extends AbstractMojo {
     }
 
     private boolean isOsX() {
-        return System.getProperty("mrj.version") != null;
+        return System.getProperty("os.name").contains("OS X");
     }
 
     /**
